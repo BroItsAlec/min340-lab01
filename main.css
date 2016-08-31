@@ -1,0 +1,177 @@
+html {
+    background-image: url(texture.png);
+    -webkit-font-smoothing: antialiased;
+    
+}
+
+@font-face {
+    font-family: 'BIG';
+    src: url("BIG.otf");
+    font-weight: normal;
+    font-style: normal;
+}
+    
+@font-face {
+    font-family: 'other';
+    src: url("aqua.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+    
+
+body {
+    background: #fff;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.06);
+    color: #545454;
+    font-family: other;
+    font-size: 14px;
+    max-width: 800px;
+    padding: 2em 2em 4em;
+    margin-right: auto;
+    margin-left: auto;
+    
+}
+
+
+
+h1 {
+    font-family: BIG;
+    font-size: 50px;
+    text-align: right;
+    padding-right: 20px;
+    padding-top: 2px;
+    margin-right: auto;
+    color: #00cc00;
+}
+
+
+
+h2 {
+    font-family: BIG;
+    font-size: 20px;
+    text-align: right;
+    padding-right: 20px;
+}
+
+h3 {
+    color: white;
+    font-size: 30px;
+    line-height: 2px;
+    text-align: right;
+    margin-top: 40px;
+    padding-right: 20px;
+   
+}
+
+h4 {
+    display: inline;
+   
+}
+
+h5 {
+   display: inline;
+   float: right;
+}
+
+h6 {
+    display: inline;
+    
+    
+}
+
+p {
+    line-height: 16px;
+}
+
+
+a {
+    color: #ffa700;
+    text-decoration: none;
+}
+
+a:hover {
+    color: yellow;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+
+b, strong {
+    font-weight: 600;
+}
+
+
+#name {
+    color: white;
+    
+}
+
+#title {
+    color: white;
+}
+
+#body {
+    
+    color: white;
+    margin-right: 300px;
+    margin-left: 50px;
+    
+    
+}
+
+#footer {
+    color: white;
+}
+
+#copyright {
+    color: white;
+    font-family: monospace, sans-serif;
+}
+
+#background-image {
+    background-image: url(ME.jpg);
+    background-repeat: no-repeat;
+}
+
+#gradient {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+
+p > h3 {
+    display: inline-block;
+}
+
+
+samp {
+    display: none;
+}
+
+img {
+    -webkit-animation: colorize 2s cubic-bezier(0, 0, .78, .36) 1;
+            animation: colorize 2s cubic-bezier(0, 0, .78, .36) 1;
+    background: transparent;
+    border: 10px solid rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    display: block;
+    margin: 1.3em auto;
+    max-width: 95%;
+}
+
+@-webkit-keyframes colorize {
+    0% {
+        -webkit-filter: grayscale(100%);
+    }
+    100% {
+        -webkit-filter: grayscale(0%);
+    }
+}
+
+@keyframes colorize {
+    0% {
+        filter: grayscale(100%);
+    }
+    100% {
+        filter: grayscale(0%);
+    }
+}
